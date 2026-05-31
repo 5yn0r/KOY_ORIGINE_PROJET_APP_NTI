@@ -1,0 +1,52 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.agents/
+.codex/
+.git
+.git/
+.
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.flutter-plugins
+build/
+
+# Android build files
+**/local.properties
+**/key.properties
+**/*.keystore
+android/.gradle/
+
+# Firebase configuration (do not commit)
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+
+# Logs and system files
+*.log
+*.tmp
+*.temp
+*.swp
+.DS_Store
+
+# Fichiers de documentation ou de configuration internes à ignorer
+FIX_SUMMARY.md
+texte.txt
+FIRESTORE_RULES.md
+CHATBOT_SETUP.md
+CHATBOT_QUICKSTART.md
+.metadata
+Blueprint.md
+Gemini.md
+
+# Local environment
+.env
+
+# Misc
+.idx/
