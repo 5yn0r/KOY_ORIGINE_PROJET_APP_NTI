@@ -91,14 +91,6 @@ flutter run
 ```
 ---
 
-## Exécution pour l'évaluation
-
-- Pour tester en local : `flutter run`
-- Pour construire l'APK Android : `flutter build apk --release`
-- Pour tester sur le web : `flutter run -d chrome`
-
----
-
 ![Capture d'écran de l'application](assets/images/APPLICATION_MOBILE_NTI.jpeg)
 
 ## Licence
