@@ -1,8 +1,8 @@
-# Documentation de l'application MYAPP
+# Documentation de l'application N'TI
 
 ## Objectif du projet
 
-MYAPP est une application pédagogique visant à faciliter l'apprentissage de la langue baoulé. Elle s'adresse aux débutants et aux apprenants qui souhaitent progresser à travers des leçons structurées, des outils d'entraînement, un dictionnaire bilingue et une expérience communautaire.
+N'TI est une application pédagogique visant à faciliter l'apprentissage de la langue baoulé. Elle s'adresse aux débutants et aux apprenants qui souhaitent progresser à travers des leçons structurées, des outils d'entraînement, un dictionnaire bilingue et une expérience communautaire.
 
 ## Utilisateurs cibles
 
@@ -102,10 +102,6 @@ Le projet utilise Firestore pour stocker :
 
 Ces fichiers sont exclus du dépôt via `.gitignore`.
 
-### Bonnes pratiques
-- Ne jamais committer les fichiers de configuration Firebase.
-- Vérifier que le projet Firebase contient bien les règles de lecture/écriture nécessaires pour l’application.
-
 ## Déploiement et tests
 
 ### Exécution en développement
@@ -124,34 +120,11 @@ flutter build apk --release
 flutter build web
 ```
 
-## Liste des fichiers à ne pas committer
-
-- `android/app/google-services.json`
-- `ios/Runner/GoogleService-Info.plist`
-- `local.properties`
-- `.env`
-- `build/`
-- `.dart_tool/`
-- `.idea/`
-- `.vscode/`
-- `*.keystore`
-- `*.log`
-
-## Conseils pour l’administration
-
-- Utiliser la branche `main` ou `master` pour la version stable.
-- Conserver `pubspec.lock` pour assurer des builds reproductibles.
-- Ajouter des captures d’écran dans le README si besoin.
-- Expliquer dans le dépôt que les fichiers Firebase sont spécifiques à l’environnement local.
-
 ## Notes de mise en ligne
 
-Ce projet est prêt à être publié sur GitHub une fois que :
-
-- `google-services.json` est bien absent du dépôt,
 - la structure du code est clarifiée dans le README,
 - la documentation `DOCUMENTATION.md` est ajoutée pour les examinateurs.
 
 ---
 
-Merci de consulter ce document pour comprendre rapidement l’architecture et le fonctionnement de MYAPP.
+Merci de consulter ce document pour comprendre rapidement l’architecture et le fonctionnement de N'TI.
