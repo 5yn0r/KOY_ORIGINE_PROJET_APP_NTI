@@ -42,8 +42,8 @@ FIRESTORE_RULES.md
 CHATBOT_SETUP.md
 CHATBOT_QUICKSTART.md
 .metadata
-Blueprint.md
-Gemini.md
+blueprint.md
+GEMINI.md
 
 # Local environment
 .env
