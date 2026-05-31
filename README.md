@@ -18,6 +18,17 @@ N'TI est une application Flutter conçue pour aider les apprenants à découvrir
 
 ---
 
+## Technologies utilisées
+
+![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-%230175C2.svg?style=for-the-badge&logo=Dart&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-%23FFCA28.svg?style=for-the-badge&logo=Firebase&logoColor=black)
+![WebRTC](https://img.shields.io/badge/WebRTC-%23333333.svg?style=for-the-badge&logo=WebRTC&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-%233ECF8E.svg?style=for-the-badge&logo=Supabase&logoColor=white)
+
+
+---
+
 ## Architecture technique
 
 - **Frontend** : Flutter + Material Design
