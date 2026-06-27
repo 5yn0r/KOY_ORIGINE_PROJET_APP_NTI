@@ -53,9 +53,9 @@ class DefaultFirebaseOptions {
     apiKey: 'VOTRE_API_KEY',
     appId: 'Id_de_l_application',
     messagingSenderId: 'selon_votre_projet',
-    projectId: 'koy-nti',
+    projectId: 'Id_de_votre_projet_firebase',
     authDomain: 'domain.firebaseapp.com',
-    storageBucket: 'koy-nti.appspot.com',
+    storageBucket: 'projet.appspot.com',
     measurementId: 'G-4EDCXWCP3M',
   );
 
@@ -63,7 +63,7 @@ class DefaultFirebaseOptions {
     apiKey: 'VOTRE_API_KEY',
     appId: 'Id_de_l_application',
     messagingSenderId: 'selon_votre_projet',
-    projectId: 'koy-nti',
-    storageBucket: 'koy-nti.appspot.com',
+    projectId: 'Id_de_votre_projet_firebase',
+    storageBucket: 'projet.appspot.com',
   );
 }
