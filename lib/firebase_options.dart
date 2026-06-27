@@ -50,9 +50,9 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'VOTRE_API_KEY',
+    apiKey: 'VOTRE_API_KEY_FIREBASE',
     appId: 'Id_de_l_application',
-    messagingSenderId: 'selon_votre_projet',
+    messagingSenderId: 'Selon_votre_projet',
     projectId: 'Id_de_votre_projet_firebase',
     authDomain: 'domain.firebaseapp.com',
     storageBucket: 'projet.appspot.com',
@@ -60,9 +60,9 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'VOTRE_API_KEY',
+    apiKey: 'VOTRE_API_KEY_FIREBASE',
     appId: 'Id_de_l_application',
-    messagingSenderId: 'selon_votre_projet',
+    messagingSenderId: 'Selon_votre_projet',
     projectId: 'Id_de_votre_projet_firebase',
     storageBucket: 'projet.appspot.com',
   );
