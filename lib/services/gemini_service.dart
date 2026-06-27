@@ -11,10 +11,9 @@ class GeminiService {
   late String _currentApiKey;
   final BaouleKnowledgeService _knowledgeService = BaouleKnowledgeService();
 
-  static const String _apiKey = 'AIzaSyAbkeEJEo9jgPW1ew3mviFZcdu-PMc2fGk';
-  static const String _primaryModelName = 'gemini-2.5-flash';
-  static const String _fallbackModelName = 'gemini-2.0-flash';
-
+  static const String _apiKey = 'VOTRE_CLE_API_GEMINI';
+  static const String _primaryModelName = 'votre_model_gemini_principal';
+  static const String _fallbackModelName = 'votre_model_gemini_fallback';
   GeminiService() {
     _initialize(_apiKey, _primaryModelName);
   }
@@ -76,7 +75,7 @@ $localContext
 
 Consignes de reponse:
 - Reponds uniquement avec les donnees locales autorisees ci-dessus.
-- Si les donnees locales ne suffisent pas, dis clairement: "Je ne trouve pas encore cette information dans nos donnees."
+- Si les donnees locales ne suffisent pas, dis clairement: "Je ne trouve pas encore de réponse. Veuillez essayer plus tard. Nous travaillons à enrichir notre base de connaissances."
 - Ne complete pas avec des connaissances generales ou internet.
 - Si plusieurs variantes existent, cite les variantes et explique que le baoule peut varier selon la prononciation.
 - Reponds en francais simple, sans Markdown, sans gras, sans astérisques.

@@ -27,6 +27,7 @@ class _CallScreenState extends State<CallScreen> {
   RTCPeerConnection? _peerConnection;
   MediaStream? _localStream;
   String? _callId;
+  final List<RTCIceCandidate> _pendingIceCandidates = [];
   bool _isCaller = false;
   bool _isMicMuted = false;
   bool _isVideoMuted = false;
@@ -131,6 +132,8 @@ class _CallScreenState extends State<CallScreen> {
     _peerConnection?.onIceCandidate = (candidate) {
       if (_callId != null) {
         _callService.addIceCandidate(_callId!, candidate, _isCaller);
+      } else {
+        _pendingIceCandidates.add(candidate);
       }
     };
 
@@ -156,6 +159,8 @@ class _CallScreenState extends State<CallScreen> {
       _callId = callId;
     });
 
+    await _flushPendingIceCandidates();
+
     _answerSubscription = _callService.getAnswerStream(callId).listen((answer) {
       _peerConnection?.setRemoteDescription(answer);
       _markCallAnswered();
@@ -175,6 +180,8 @@ class _CallScreenState extends State<CallScreen> {
       setState(() {
         _callId = callId;
       });
+      await _flushPendingIceCandidates();
+
       final offer = await _callService.getOffer(callId);
       if (offer != null) {
         await _peerConnection!.setRemoteDescription(offer);
@@ -220,6 +227,15 @@ class _CallScreenState extends State<CallScreen> {
         _isFrontCamera = !_isFrontCamera;
       });
     }
+  }
+
+  Future<void> _flushPendingIceCandidates() async {
+    if (_callId == null || _pendingIceCandidates.isEmpty) return;
+
+    for (final candidate in List<RTCIceCandidate>.from(_pendingIceCandidates)) {
+      await _callService.addIceCandidate(_callId!, candidate, _isCaller);
+    }
+    _pendingIceCandidates.clear();
   }
 
   void _markCallAnswered() {

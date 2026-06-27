@@ -50,20 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC1KKhW80pQeeQf01Uo6mVOAMVsExgMTfw',
-    appId: '1:823307885531:web:617548a6d92e65e60fe5fe',
-    messagingSenderId: '823307885531',
+    apiKey: 'VOTRE_API_KEY',
+    appId: 'Id_de_l_application',
+    messagingSenderId: 'selon_votre_projet',
     projectId: 'koy-nti',
-    authDomain: 'koy-nti.firebaseapp.com',
-    storageBucket: 'koy-nti.firebasestorage.app',
+    authDomain: 'domain.firebaseapp.com',
+    storageBucket: 'koy-nti.appspot.com',
     measurementId: 'G-4EDCXWCP3M',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC8mF9j2h4Rz66UnpJODbM7koFNjpWOpP8',
-    appId: '1:823307885531:android:f4bb34befca9cf660fe5fe',
-    messagingSenderId: '823307885531',
+    apiKey: 'VOTRE_API_KEY',
+    appId: 'Id_de_l_application',
+    messagingSenderId: 'selon_votre_projet',
     projectId: 'koy-nti',
-    storageBucket: 'koy-nti.firebasestorage.app',
+    storageBucket: 'koy-nti.appspot.com',
   );
 }
