@@ -82,7 +82,6 @@ flutter pub get
 - Créez un projet Firebase.
 - Ajoutez une application Android.
 - Téléchargez `google-services.json` et placez-le dans `android/app/`.
-- Si vous ajoutez iOS, placez `GoogleService-Info.plist` dans `ios/Runner/`.
 
 4. Lancez l’application :
 
