@@ -83,6 +83,13 @@ flutter pub get
 - Ajoutez une application Android.
 - Téléchargez `google-services.json` et placez-le dans `android/app/`.
 
+4. Mettre les clé API firebase & Gemini dans les fichiers de config dediés.
+
+   ```sh
+/lib/services et /lib/firebase_option
+```
+   
+
 4. Lancez l’application :
 
 ```sh
