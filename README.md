@@ -85,12 +85,12 @@ flutter pub get
 
 4. Mettre les clé API firebase & Gemini dans les fichiers de config dediés.
 
-   ```sh
+```sh
 /lib/services et /lib/firebase_option
 ```
    
 
-4. Lancez l’application :
+5. Lancez l’application :
 
 ```sh
 flutter run
